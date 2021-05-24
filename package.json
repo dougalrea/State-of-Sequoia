@@ -1,0 +1,13 @@
+{
+  "name": "State-of-Sequoia",
+  "version": "1.0.0",
+  "description": "Festival Web App",
+  "main": "index.js",
+  "repository": "git@github.com:dougalrea/State-of-Sequoia.git",
+  "author": "Dougal Rea <dougal.rea@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.11"
+  }
+}
