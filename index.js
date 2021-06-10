@@ -5,11 +5,11 @@ import connectToDatabase from './lib/connectToDB.js'
 import logger from './logger.js'
 import router from './config/router.js'
 import errorHandler from './lib/errorHandler.js'
-// import path from 'path'
+import path from 'path'
 
 const app = express()
 
-// const __dirname = path.resolve()
+const __dirname = path.resolve()
 
 
 export default async function startServer() {
@@ -18,7 +18,7 @@ export default async function startServer() {
 
     console.log('🤖 Database has connected')
 
-    // app.use(express.static(`${__dirname}/client/build`))
+    app.use(express.static(`${__dirname}/client`))
 
     app.use(express.json())
 
