@@ -1,8 +1,8 @@
 import React from 'react'
 import { getData } from '../lib/api'
+import Nav from './Nav'
 
-function Home() {
-
+function Home () {
   const [response, setResponse] = React.useState(null)
 
   React.useEffect(() => {
@@ -19,19 +19,13 @@ function Home() {
     getTheResponse()
   }, [])
 
-  return(
+  return (
     <>
-      <p>
-        Yeehaw
-      </p>
-        {response ?
-        response.map(item => (
-          <p key={item._id}>
-        {item.testText}
-        </p>
-        ))
-        :
-        ''}
+      <Nav />
+      <p>Yeehaw</p>
+      {response
+        ? response.map(item => <p key={item._id}>{item.testText}</p>)
+        : ''}
     </>
   )
 }

@@ -1,10 +1,22 @@
 import React from 'react'
+import { Center, Button } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
-function LandingPage() {
+function LandingPage () {
   return (
-    <h1>
-      I'm a cheeky lil boi
-    </h1>
+    <>
+      <Center bg='green.100' h='100vh' color='white'>
+        <Link to='/home'>
+          <Button
+            variant='ghost'
+            color='orange.800'
+            _hover={{ boxShadow: 'md', bg: 'green.500', color: 'white' }}
+          >
+            Enter Sequoia
+          </Button>
+        </Link>
+      </Center>
+    </>
   )
 }
 

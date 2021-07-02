@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Nav() {
-  return(
-    <p>
-      this be the nav bar
-    </p>
+function Nav () {
+  return (
+    <>
+      <p>this be the nav bar</p>
+    </>
   )
 }
 
