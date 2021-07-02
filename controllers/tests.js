@@ -1,6 +1,6 @@
 import Test from '../models/test.js'
 
-async function testIndex(_req, res, next) {
+async function testsIndex(_req, res, next) {
   try {
     const tests = await Test.find()
     return res.status(200).json(tests)
@@ -22,5 +22,5 @@ async function testCreate(req, res, next) {
 
 export default {
   create: testCreate,
-  index: testIndex
+  index: testsIndex,
 }
